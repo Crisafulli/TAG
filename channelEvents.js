@@ -7,14 +7,14 @@ var request = require("request");
 
 const endpoints = [
   {
-  tagURL: 'http://34.210.83.47/api/2.0/channels/events/.json',
+  tagURL: 'host/api/2.0/channels/events/.json',
   // each source inside the splunk index, has a specified token
-  Logger: new SplunkLogger({token:'6EA37CCC-3004-488F-856E-DABDFD0CBAC1', url:'https://http-inputs-fox.splunkcloud.com:443'}),
+  Logger: new SplunkLogger({token:'change to token', url:'change to URL'}),
   interval: 3000,
   },
   {
-  tagURL: 'http://34.210.83.47/api/2.0/channels/statistics/.json',
-  Logger: new SplunkLogger({token:'FDD818FB-D069-441F-B5F1-EE62D9601B71', url:'https://http-inputs-fox.splunkcloud.com:443',}),
+  tagURL: 'host/api/2.0/channels/statistics/.json',
+  Logger: new SplunkLogger({token:'change to token', url:'change to URL'}),
   interval: 3000,
   },
 
@@ -71,7 +71,7 @@ const run = (endpoint)=> () => {
     "url": endpoint.tagURL,
     "headers": {
       "Content-Type": "application/x-www-form-urlencoded",
-      "Authorization": "Basic QWRtaW46QWRtaW4=",
+      "Authorization": "Basic <change to token from curl>",
     }
   };
 
