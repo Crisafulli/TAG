@@ -56,7 +56,7 @@ Logger.error = function(err, context) {
 };
 
 console.log(JSON.stringify(body, null , 2))
-console.log(response.error)
+// console.log(response.error)
 console.log(response.statusCode)
 console.log(`API call ${counter}` + ' ' + 'complete.');
 console.log("=======================")
