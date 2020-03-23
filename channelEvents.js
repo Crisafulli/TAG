@@ -4,7 +4,6 @@ const package = require('./package.json');
 var SplunkLogger = require("splunk-logging").Logger;
 var request = require("request");
 
-//All new code can delete all the up to "const endpoints"
 
 const endpoints = [
   {
@@ -78,8 +77,10 @@ const run = (endpoint)=> () => {
 
 return request(options, function (error, response) { 
     if (error){
-      // Function to define -- this needs to be defined. Create payload. Send message to splunk. Similar to log response to splunk. Send error and not api response
-      // logErrorToSplunk()
+      // Need to define a funciton logErrorToSplunk(). 
+      //Create payload > send message to splunk. Similar to log response to splunk. Send error and not api response
+      // logger.send request (write to splunk)
+    
     }else {
       //function to define (var paylod)
 logResponseToSplunk(endpoint.Logger, options, response)
@@ -87,8 +88,4 @@ logResponseToSplunk(endpoint.Logger, options, response)
   })
 };
 
-  //Write new error funciton 
-  // if error, call 'log error'<-- inside log error, prepare the payload and make logger.send request (write to splunk)
- 
-// for perofmance of each call, do this inside of 'run' function
 endpoints.forEach(endpoint => setInterval(run(endpoint), endpoint.interval))
