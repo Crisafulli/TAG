@@ -28,7 +28,7 @@ const endpoints = [
   {
   tagURL: 'http://52.12.21.142/api/2.0/channels/statistics/audio_pids_statistics/.json',
   Logger: new SplunkLogger({token:'84A5DBF1-D7F2-4403-9BA0-46C33B173A3C', url:'https://http-inputs-fox.splunkcloud.com:443',}),
-  interval: 10000,
+  interval: 5000,
   },
   // {
   // tagURL: 'http://34.210.83.47/api/2.0/channels/statistics/{ID INTEGER}/.json',
