@@ -1,8 +1,8 @@
 {
   "name": "tag_api_calls",
-  "version": "1.0.2",
-  "description": "endpoints to hit",
-  "main": "index.js",
+  "version": "1.0.3",
+  "description": "endpoints to hit...updated IP addresses for new instance",
+  "main": "tagTest.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
