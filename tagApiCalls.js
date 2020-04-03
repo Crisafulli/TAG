@@ -5,8 +5,6 @@ var SplunkLogger = require("splunk-logging").Logger;
 var request = require("request");
 
 
-
-
 const endpoints = [
   {
     tagURL: 'http://52.12.21.142/api/2.0/channels/events/.json',
@@ -53,8 +51,8 @@ function logResponseToSplunk(Logger, options, response) {
     }
   };
 
-  // This line is optional
-  console.log("Sending payload", JSON.stringify(payload, null, 4));
+  // The following line is optional
+//   console.log("Sending payload", JSON.stringify(payload, null, 4));
 
   Logger.send(payload, function (err, response, body) {
     // If successful, body will be { text: 'Success', code: 0 }
@@ -112,7 +110,7 @@ const run = (endpoint) => () => {
   })
 };
 
-console.log('Congratulations! Now run it for real, and see if the response will still post!')
+// console.log('Congratulations! Now run it for real, and see if the response will still post!')
 
 
 
