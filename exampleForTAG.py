@@ -20,15 +20,15 @@ foxSportsKey = 'Acctoun Key Goes here' # Pass it in as parm on 55
 
 tokenDictionariesWrestleMania =   
 # {'name': 'PPV Wrestlemania 36 | Public','cid': 'channel GUID'},
-{'name': 'VDMS Channel Name','cid': 'channel GUID'},
-{'name': 'VDMS Channel Name','cid': 'channel GUID'},
-{'name': 'VDMS Channel Name','cid': 'channel GUID'},
-{'name': 'VDMS Channel Name','cid': 'channel GUID'},
-{'name': 'VDMS Channel Name','cid': 'channel GUID'},
-{'name': 'VDMS Channel Name','cid': 'channel GUID'},
-{'name': 'VDMS Channel Name','cid': 'channel GUID'},
-{'name': 'VDMS Channel Name','cid': 'channel GUID'},
-{'name': 'AUX 992 | Pico | Unauthenticated','cid': 'channel GUID'},
+{'name': ' Channel Name','cid': 'channel GUID'},
+{'name': ' Channel Name','cid': 'channel GUID'},
+{'name': ' Channel Name','cid': 'channel GUID'},
+{'name': ' Channel Name','cid': 'channel GUID'},
+{'name': ' Channel Name','cid': 'channel GUID'},
+{'name': ' Channel Name','cid': 'channel GUID'},
+{'name': ' Channel Name','cid': 'channel GUID'},
+{'name': ' Channel Name','cid': 'channel GUID'},
+{'name': ' Channel Name','cid': 'channel GUID'},
 ]
 
 # For the dictionary above, append VDMS specific params needed to digitally sign, authenticate, and allow playback.
@@ -56,7 +56,7 @@ for index in range(len(tokenDictionariesWrestleMania)):
     queryStr = queryStr + '&sig=' + sig
 
     # The token would then be added to a playback URL, e.g.
-    url = 'https://content.uplynk.com/channel/' + tokenDictionariesWrestleMania[index]["cid"] + '.m3u8'
+    url = 'https://somthing.here.com/channel/' + tokenDictionariesWrestleMania[index]["cid"] + '.m3u8'
     url = url + '?' + queryStr
     # tokenDictionariesSDR[index]['url'] = url
     
