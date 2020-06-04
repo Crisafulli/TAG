@@ -9,20 +9,20 @@ const endpoints = [
   {
     tagURL: 'http://address/api/2.0/channels/events/.json',
     // each source inside the splunk index, has a specified token
-    Logger: new SplunkLogger({token: '6EA37CCC-3004-488F-856E-DABDFD0CBAC1', url: 'https://http-inputs-fox.splunkcloud.com:443'}),
+    Logger: new SplunkLogger({token: 'token', url: 'splunk-url'}),
     interval: 3000,
     logChannelItems: false
   },
   {
     tagURL: 'http://address/api/2.0/channels/statistics/.json',
-    Logger: new SplunkLogger({token: 'FDD818FB-D069-441F-B5F1-EE62D9601B71', url: 'https://http-inputs-fox.splunkcloud.com:443',}),
+    Logger: new SplunkLogger({token: 'token', url: 'splunk-url',}),
     interval: 3000,
     logChannelItems: true,
-    channelLogger: new SplunkLogger({token: 'ACD6A702-3DF1-4CE7-A03A-2E3CC5337122', url: 'https://http-inputs-fox.splunkcloud.com:443', }),
+    channelLogger: new SplunkLogger({token: 'token', url: 'splunk-url', }),
   },
   {
     tagURL: 'http://address/api/2.0/channels/statistics/audio_pids_statistics/.json',
-    Logger: new SplunkLogger({token: '84A5DBF1-D7F2-4403-9BA0-46C33B173A3C', url: 'https://http-inputs-fox.splunkcloud.com:443',}),
+    Logger: new SplunkLogger({token: 'token', url: 'splunk-url',}),
     interval: 5000,
     logChannelItems: false    
   },
