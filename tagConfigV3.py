@@ -3,7 +3,7 @@ import hashlib, time, hmac, urllib, random
 AccountDict = [
     {
         "account": "fox_sports",
-        "owner":"pIbMLo934cPQtk0fLGO2CCYUp7BN3nhEyfktPnnz",
+        "owner":"replace with ID",
         # "isPublic": True,
         "publicDictionary" : 
         [
@@ -1260,7 +1260,7 @@ AccountDict = [
     },
     {
         "account": "fox_news",
-        "owner":"bvcuef+hyJ/fMSphegT6q2FeuQWjJ00hUqDyHv4F",
+        "owner":"replace with ID",
         "publicDictionary" : 
         [
             {
@@ -1312,7 +1312,7 @@ AccountDict = [
     },
     {
         "account": "fox_owned_affiliates",
-        "owner":"QsMCCinxJkNAEmG+ihrZWRY1/zO4E7o0u9yFV/9S",
+        "owner":"replace with ID",
         "publicDictionary" : 
         [
             {
