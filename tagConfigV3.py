@@ -4,7 +4,6 @@ AccountDict = [
     {
         "account": "fox_sports",
         "owner":"replace with ID",
-        # "isPublic": True,
         "publicDictionary" : 
         [
             {
@@ -27,7 +26,7 @@ AccountDict = [
                     "ad.csid": "foxnow/webdesktop/live/fs1",
                     "ad.prof": "516429:uplynk_foxnow_webdesktop_live",
                     "ad.kvsep": "|",
-                    # only We need vcid2 for ad.kv param below (line 32) If on FBC, add different key values 
+                    # only We need vcid2 for ad.kv param below (line 32) If on FBC, add different values 
                     "ad.kv": "_fw_ae|{param:mvpd:nomvpd}|_fw_us_privacy|{param:_fw_us_privacy}|_fw_did_idfa|{param:idfa}|_fw_did_google_advertising_id|{param:google_advertising_id}|_fw_did_android_id|{param:android_id}|_fw_did|{param:did}|_fw_nielsen_app_id|{param:nielsen_app_id}|_fw_vcid2|a777b1c8-8ef2-4e08-8e93-3506fa8c804b|kuid|u3v6ytjya|_fw_seg|386123:sbsz8qqux,sbu9bgphc,shpmwshty",
                     "ad.metr": "1031",
                     "ad.flexv": "2", # These will change in week or 2
@@ -47,7 +46,6 @@ AccountDict = [
             },
             {
                 "channel": "TX701 | National | Public",
-                #  Can remove this -- not needed "key": "pIbMLo934cPQtk0fLGO2CCYUp7BN3nhEyfktPnnz",
                 "cid": "f719c5102b2f45c7b9d2c3cc2d503736",
                 "params": 
                 {
